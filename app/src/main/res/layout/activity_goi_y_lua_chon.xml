@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/appbar_314">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="#fff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gylchon"
+                    android:gravity="center"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_back_xanh"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="19sp"
+                    android:text="Gợi Ý Lựa Chọn" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        android:id="@+id/tablayout_id_314"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        android:textAlignment="center"
+        android:textDirection="locale"
+        app:tabTextColor="#0E0E0E"
+        app:tabIndicatorColor="#2B7DBD"
+        app:tabSelectedTextColor="#2B7DBD"
+        android:background="#EDEDEA"
+        android:gravity="center_horizontal" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager_id_314"></androidx.viewpager.widget.ViewPager>
+
+
+</LinearLayout>
